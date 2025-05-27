@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="icon" href="coracao-72.png" type="image/png">
+
+    <style>
+            .courgette-regular {
+            font-family: "Courgette", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courgette';
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            font-size: 30px;
+            color: #e74c3c;
+            height: 100vh;
+            width: 100vw;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            width: 250px;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            background: #e74c3c;
+            color: white;
+            font-weight: 600;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 17px;
+            font-family: "Courgette";
+        }
+    </style>
+    <title>Oi meu amor rsrs</title>
+</head>
+
+<body>
+    <audio autoplay loop style="display: none;">
+        <source src="musicas/aliancas.mp3" type="audio/mpeg">
+    </audio>
+    <div class="box">
+        <h1>Feliz dia dos namorados meu amor!</h1>
+        <img src="Couple Love Sticker by ACHTUNG.gif" alt="">
+        <h2>Quer passar o resto da vida comigo?</h2>
+        <div class="buttons-container">
+            <a href="tambem.html"><button>Sim</button></a>
+            <a href=""><button id="nao">Não</button></a>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    let button = document.getElementById('nao');
+    let height = window.innerHeight - 100;
+    let width = window.innerWidth - 100;
+
+    button.addEventListener('mouseover', function () {
+        button.style.position = "absolute"
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+</html>
